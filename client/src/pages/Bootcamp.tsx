@@ -37,8 +37,14 @@ export const Bootcamp = (): JSX.Element => {
 
   return (
     <div className="flex flex-col w-full items-start">
-      <section className="bg-[#f7f4ee] w-full relative">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-12 flex flex-col h-full">
+      <section className="bg-[#f7f4ee] w-full relative overflow-hidden">
+        <img
+          src="/figmaAssets/world.png"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover opacity-10 pointer-events-none select-none"
+        />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-12 flex flex-col h-full relative z-10">
           {/* Header/Navigation */}
           <div className="flex flex-col sm:flex-row justify-between items-center mb-8 sm:mb-16 gap-4">
             <div className="font-bold text-lg sm:text-xl tracking-tight">
